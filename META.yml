@@ -1,0 +1,38 @@
+---
+abstract: 'BigQuery data importer from MySQL tables.'
+author:
+  - 'Tatsuro Hisamori <myfinder@cpan.org>'
+build_requires:
+  Test::More: '0.98'
+configure_requires:
+  Module::Build::Tiny: '0.035'
+dynamic_config: 0
+generated_by: 'Minilla/v2.2.0, CPAN::Meta::Converter version 2.142690'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: App-BigQuery-Importer-MySQL
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+    - builder
+requires:
+  Config::CmdRC: '0'
+  DBD::mysql: '0'
+  DBI: '0'
+  perl: '5.008001'
+resources:
+  bugtracker: https://github.com/myfinder/app-bigquery-importer-mysql/issues
+  homepage: https://github.com/myfinder/app-bigquery-importer-mysql
+  repository: git://github.com/myfinder/app-bigquery-importer-mysql.git
+version: 0.01_3
+x_authority: cpan:MYFINDER
+x_contributors:
+  - 'Tatsuro Hisamori <medianetworks@gmail.com>'

@@ -1,0 +1,73 @@
+{
+   "abstract" : "BigQuery data importer from MySQL tables.",
+   "author" : [
+      "Tatsuro Hisamori <myfinder@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v2.2.0",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "App-BigQuery-Importer-MySQL",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author",
+         "builder"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.035"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion::Fast" : "0.04",
+            "Test::PAUSE::Permissions" : "0.04",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Config::CmdRC" : "0",
+            "DBD::mysql" : "0",
+            "DBI" : "0",
+            "perl" : "5.008001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.98"
+         }
+      }
+   },
+   "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/myfinder/app-bigquery-importer-mysql/issues"
+      },
+      "homepage" : "https://github.com/myfinder/app-bigquery-importer-mysql",
+      "repository" : {
+         "url" : "git://github.com/myfinder/app-bigquery-importer-mysql.git",
+         "web" : "https://github.com/myfinder/app-bigquery-importer-mysql"
+      }
+   },
+   "version" : "0.01_3",
+   "x_authority" : "cpan:MYFINDER",
+   "x_contributors" : [
+      "Tatsuro Hisamori <medianetworks@gmail.com>"
+   ]
+}
