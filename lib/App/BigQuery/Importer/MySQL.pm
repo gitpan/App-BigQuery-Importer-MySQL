@@ -3,12 +3,11 @@ use 5.008001;
 use strict;
 use warnings;
 use Getopt::Long qw(:config posix_default no_ignore_case gnu_compat);
-use Time::Piece;
 use File::Temp qw(tempfile tempdir);
 use File::Basename;
 use DBI;
 
-our $VERSION = "0.01_3";
+our $VERSION = "0.01_4";
 
 sub new {
     my $class = shift;
@@ -58,7 +57,7 @@ sub run {
     }
 
     # create temporary bucket
-    my $bucket_name = $src_table . '_' . localtime->epoch;
+    my $bucket_name = $src_table . '_' . time;
     unless ($self->{'dryrun'}) {
         my $mb_command = "$self->{'progs'}->{'gsutil'} mb -p $self->{'project_id'} gs://$bucket_name";
         my $result_create_bucket = system($mb_command);
