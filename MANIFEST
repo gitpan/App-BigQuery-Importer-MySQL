@@ -9,5 +9,6 @@ lib/App/BigQuery/Importer/MySQL.pm
 minil.toml
 script/mysqlbq
 t/00_compile.t
+t/01_new.t
 META.yml
 MANIFEST

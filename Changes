@@ -1,5 +1,9 @@
 Revision history for Perl extension App-BigQuery-Importer-MySQL
 
+0.021 2014-11-17T08:45:04Z
+
+    - check arguments and add test case
+
 0.02 2014-11-17T07:14:47Z
 
     - Alpha Release
