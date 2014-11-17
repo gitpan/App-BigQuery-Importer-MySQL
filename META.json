@@ -54,7 +54,13 @@
          }
       }
    },
-   "release_status" : "unstable",
+   "provides" : {
+      "App::BigQuery::Importer::MySQL" : {
+         "file" : "lib/App/BigQuery/Importer/MySQL.pm",
+         "version" : "0.02"
+      }
+   },
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/myfinder/app-bigquery-importer-mysql/issues"
@@ -65,7 +71,7 @@
          "web" : "https://github.com/myfinder/app-bigquery-importer-mysql"
       }
    },
-   "version" : "0.01_4",
+   "version" : "0.02",
    "x_authority" : "cpan:MYFINDER",
    "x_contributors" : [
       "Tatsuro Hisamori <medianetworks@gmail.com>"

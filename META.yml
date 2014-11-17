@@ -23,6 +23,10 @@ no_index:
     - examples
     - author
     - builder
+provides:
+  App::BigQuery::Importer::MySQL:
+    file: lib/App/BigQuery/Importer/MySQL.pm
+    version: '0.02'
 requires:
   Config::CmdRC: '0'
   DBD::mysql: '0'
@@ -32,7 +36,7 @@ resources:
   bugtracker: https://github.com/myfinder/app-bigquery-importer-mysql/issues
   homepage: https://github.com/myfinder/app-bigquery-importer-mysql
   repository: git://github.com/myfinder/app-bigquery-importer-mysql.git
-version: 0.01_4
+version: '0.02'
 x_authority: cpan:MYFINDER
 x_contributors:
   - 'Tatsuro Hisamori <medianetworks@gmail.com>'
